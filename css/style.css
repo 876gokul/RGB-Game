@@ -1,0 +1,143 @@
+/* general styles */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  background-color: #0c090b;
+  color: whitesmoke;
+}
+
+.container {
+  display: flex;
+}
+
+
+/* display styles */
+
+header {
+  background-color: #0f122f;
+  height: 100%;
+  margin-bottom: 0;
+  transition: background 0.5s ease;
+}
+
+.bg-color {
+  display: flex;
+  height: 5vh;
+  background-color: #bdb9ca;
+}
+
+.display {
+  text-align: center;
+  padding: 2em;
+  text-transform: uppercase;
+}
+
+.display h1 {
+  font-size: 32px;
+  font-weight: 100;
+}
+
+.display .color {
+  font-size: 42px;
+  font-weight: 100;
+}
+
+.result {
+  font-size: 22px;
+  padding: 1em;
+  letter-spacing: 0.2em;
+}
+
+@media only screen and (max-width: 600px) {
+  .display h1 {
+    font-size: 22px;
+  }
+  .display .color {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .display h1 {
+    font-size: 18px;
+  }
+  .display .color {
+    font-size: 28px;
+  }
+}
+
+
+/* btn-container styles */
+
+main {
+  margin-top: 0;
+  background-color: #bdb9ca;
+  height: 5vh;
+}
+
+.btn-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  max-width: 750px;
+  height: 100%;
+}
+
+.btn {
+  height: 100%;
+  padding: 0.3em 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 24px;
+  font-weight: 500;
+  outline: none;
+  background: none;
+  border: none;
+}
+
+button:hover {
+  background-color: #0f122fe5;
+  color: white;
+}
+
+.active {
+  background-color: #0f122fe5;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .btn {
+    padding: 0 0.3em;
+    font-size: 18px;
+    letter-spacing: normal;
+  }
+}
+
+
+/* colors-container styles */
+
+.colors-container {
+  margin: 0 auto;
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 750px;
+}
+
+.color-box {
+  padding-bottom: 30%;
+  width: 30%;
+  margin: 1.66%;
+  border-radius: 10%;
+  background-color: brown;
+  transition: background 0.7s ease;
+}
+
+@media only screen and (max-width: 600px) {
+  .colors-container {
+    max-width: 80%;
+  }
+}

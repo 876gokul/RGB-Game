@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RGB GAME</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="bg-color"></div>
+    <section class="display">
+      <h1>the rgb guessing game</h1>
+      <div id="color" class="color"></div>
+      <div class="result">
+        try again
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="btn-container">
+      <span class="left">
+          <button id="reset" class="btn">new colors</button>
+        </span>
+      <span class="right">
+          <button class="btn mode">easy</button>
+          <button class="btn mode active">hard</button>
+        </span>
+    </section>
+    <section class="colors-container">
+      <div class="color-box"></div>
+      <div class="color-box"></div>
+      <div class="color-box"></div>
+      <div class="color-box"></div>
+      <div class="color-box"></div>
+      <div class="color-box"></div>
+    </section>
+  </main>
+  <script src="./script/index.js"></script>
+</body>
+
+</html>
