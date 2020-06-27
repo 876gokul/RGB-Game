@@ -13,6 +13,18 @@ var messageDisplay = document.querySelector(".result");
 var h1 = document.querySelector(".display");
 var resetButton = document.querySelector("#reset");
 var modeButtons = document.querySelectorAll(".mode");
+var info = document.querySelector("#info");
+var card = document.querySelector(".property-card");
+// =============================================
+// adding event listener to btn
+// =============================================
+resetButton.addEventListener("click", function() {
+  reset();
+});
+info.addEventListener("click", function() {
+  card.classList.toggle("pop");
+  // alert("hi");
+});
 // =============================================
 // main function
 // =============================================
@@ -78,9 +90,6 @@ function reset() {
   h1.style.background = "#0F122F";
 }
 
-resetButton.addEventListener("click", function() {
-  reset();
-});
 // =============================================
 // function for changing colors
 // =============================================
